@@ -32,16 +32,15 @@ public class ToDo {
                 ToDoItem item = items.get(itemNum-1);
                 item.isDone = !item.isDone;
 
-
             }
             else if(option.equals("3")){
                 int i = 1;
                 for(ToDoItem item : items){
-                    String checkbox = "[ ] ";
+                    String checkbox = "[ ]";
                     if (item.isDone){
                         checkbox = "[x] ";
                     }
-                    System.out.println(checkbox +i + ". " + item.text);
+                    System.out.printf("%s %d. %s\n", checkbox, i, item.text);
                     i++;
                 }
             }
