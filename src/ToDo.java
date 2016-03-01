@@ -77,7 +77,7 @@ public class ToDo {
                         checkbox = "[x] ";
                     }
                     System.out.printf("%s %d. %s\n", checkbox, item.id, item.text);
-                    1//i++;
+                    //i++;
                 }
             }
             else {
